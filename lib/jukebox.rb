@@ -38,12 +38,7 @@ def run
     play(songs)
   when command == "list"
     list(songs)
-  when command == 
-      
-  
-  
-  when command == "exit"
-    exit_jukebox
-    break
-    when 
+  when command == "help"
+    help
+  end
 end
