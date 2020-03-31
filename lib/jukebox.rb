@@ -24,7 +24,13 @@ def play(array)
   puts "Please enter a song name or number:"
   input = gets.strip
   if array.include?(input)
-    puts "Playing #{"
+    puts "Playing #{input}"
+  elsif (1..9).to_a.include?(input.to_i)
+    puts "Playing #{songs[input.to_i - 1]}"
+  else
+    puts "Invalid input, please try again"
+  end
+end
   array.each.with_index(1) { |song, index|
   if input == song || input.to_i == index.to_i
     puts "Playing #{song}"
