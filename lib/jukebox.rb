@@ -30,16 +30,16 @@ end
 def run
   while true do
     puts "Please enter a command:"
-  command = gets.strip
-  case command
-  when "exit"
-    exit_jukebox
-    break
-  when "play"
-    play(songs)
-  when "list"
-    list(songs)
-  when "help"
-    help
+    command = gets.strip
+    case command
+    when "exit"
+      exit_jukebox
+      break
+    when "play"
+      play(songs)
+    when "list"
+      list(songs)
+    when "help"
+      help
   end
 end
