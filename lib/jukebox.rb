@@ -34,7 +34,11 @@ def run
   when command == "exit"
     exit_jukebox
     break
-  when command == ""
+  when command == "play"
+    play(songs)
+  when command == "list"
+    list(songs)
+  when command == 
       
   
   
