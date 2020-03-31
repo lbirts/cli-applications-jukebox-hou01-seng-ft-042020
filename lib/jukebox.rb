@@ -30,7 +30,16 @@ end
 def run
   puts "Please enter a command:"
   command = gets.strip
-  if command == "exit"
+  case command
+  when command == "exit"
     exit_jukebox
-    
+    break
+    when
+      
+  
+  
+  when command == "exit"
+    exit_jukebox
+    break
+    when 
 end
